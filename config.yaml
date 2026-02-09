@@ -21,12 +21,12 @@ twitter:
   cookies_secret: ""
 
 models:
-  clustering: gpt-4o-mini
-  generation: claude-sonnet-4-5-20250929
+  clustering: claude-haiku-4-5-20251001
+  generation: claude-opus-4-6
   scoring:
-    - gpt-4o
+    - gpt-5.2
     - claude-sonnet-4-5-20250929
-    - gemini-2.0-flash
+    - gemini-3-pro-preview
 
 slack:
   webhook_secret: ""
