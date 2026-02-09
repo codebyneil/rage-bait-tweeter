@@ -27,6 +27,3 @@ env/
 .DS_Store
 Thumbs.db
 
-# uv
-.python-version
-uv.lock

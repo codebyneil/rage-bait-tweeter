@@ -1,0 +1,45 @@
+feeds:
+  - url: https://hnrss.org/frontpage?points=50
+    category: tech
+  - url: https://techcrunch.com/feed
+    category: tech
+  - url: https://feeds.reuters.com/reuters/businessNews
+    category: finance
+  - url: https://feeds.bloomberg.com/markets/news.rss
+    category: finance
+  - url: https://apnews.com/business.rss
+    category: finance
+  - url: https://rss.politico.com/politics.xml
+    category: politics
+  - url: https://rss.politico.com/congress.xml
+    category: politics
+  - url: https://apnews.com/politics.rss
+    category: politics
+
+twitter:
+  handle: "@rage_takes"
+  cookies_secret: ""
+
+models:
+  clustering: gpt-4o-mini
+  generation: claude-sonnet-4-5-20250929
+  scoring:
+    - gpt-4o
+    - claude-sonnet-4-5-20250929
+    - gemini-2.0-flash
+
+slack:
+  webhook_secret: ""
+
+limits:
+  max_tweets_per_day: 3
+  headline_window_hours: 12
+  min_score_threshold: 6.5
+
+peak_hours:
+  timezone: America/New_York
+  windows:
+    - { start: "07:00", end: "09:00" }
+    - { start: "12:00", end: "13:00" }
+    - { start: "17:00", end: "20:00" }
+    - { start: "21:00", end: "23:00" }
